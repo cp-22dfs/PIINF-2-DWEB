@@ -5,14 +5,17 @@
     <meta http-equiv="Content-Type" content="text/html; chraset=utf-8" />
 </head>
 <body>
+
+<pre>
+
 <?php
 
-$prenom = "Diogo";
-$nom = "Soares";
-$profession = "informaticien";
-
-echo "<b>$nom, $prenom</b>, $profession<br />"
+print_r($_POST);
 
 ?>
+
+</pre>
+
 </body>
 </html>
+
