@@ -13,6 +13,9 @@ th{
 </head>
 <body>
 <?php
+
+echo "<h1 class=\"titre\"></h1>";
+
 $tab = array
     ("formation" => "ict",
     "annee" => "2",
