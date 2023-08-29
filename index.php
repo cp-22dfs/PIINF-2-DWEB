@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>Exemple 1</title>
+
 </head>
 <style>
 </style>

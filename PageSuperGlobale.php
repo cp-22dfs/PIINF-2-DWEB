@@ -3,11 +3,12 @@
 <head>
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="Content-Type" content="text/html; chraset=utf-8" />
-
     <style>
 th{
     background-color: lightgray;
+    width: 50px;
 }
+
     </style>
 
 </head>
