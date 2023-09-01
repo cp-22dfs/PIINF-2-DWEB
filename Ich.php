@@ -1,9 +1,15 @@
-
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; chraset=utf-8" />
 <style>
+    th , td , table{text-align : left;
+        border: solid 1px black;}
+    th , td {width: 30px;}
+    th { background-color: darkorchid;
 
-th {text-align : left;
-    border: solid 2px black;}
-
+    }
 </style>
 
 <?php
@@ -57,6 +63,7 @@ echo "</table>";
 
 echo "<table border='2'>";
 
+
 foreach ($tab_notes AS $domaine){
     echo "<tr>";
     echo "<br>";
@@ -100,4 +107,6 @@ echo "</table>";
 // echo "({$tab_notes['cie']['modules'][123]['note']} + {$tab_notes['cie']['modules'][187]['note']}) / 2";
 echo "</pre>";
 ?>
+    </body>
+</html>
 
