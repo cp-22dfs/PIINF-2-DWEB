@@ -28,9 +28,25 @@
         }
     </style>
 </head>
-<body>
+<body
 <div id="chat">
-    <img src="catdanse.png" alt="Chat qui danse">
+
+<td>
+
+    <tr><img src="catdanse.png" alt="Chat qui danse"></tr>
+    <tr><img src="quentin.jpg" alt="Quentin"></tr>
+    <tr><img src="catdanse.png" alt="Chat qui danse"></tr>
+    <tr><img src="quentin.jpg" alt="Quentin"></tr>
+    <tr><img src="catdanse.png" alt="Chat qui danse"></tr>
+    <tr><img src="quentin.jpg" alt="Quentin"></tr>
+    <tr><img src="catdanse.png" alt="Chat qui danse"></tr>
+    <tr><img src="quentin.jpg" alt="Quentin"></tr>
+    <tr><img src="catdanse.png" alt="Chat qui danse"></tr>
+    <tr><img src="quentin.jpg" alt="Quentin"></tr>
+    <tr><img src="dinosaur.gif" alt="dinosaure"></tr>
+
+</td>
+
 </div>
 </body>
 </html>
