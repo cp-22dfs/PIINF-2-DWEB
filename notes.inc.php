@@ -1,7 +1,11 @@
+<style>
+    th {text-align : left;
+        border: solid 2px black;}
+</style>
 <?php
 
-
 $tab_notes['ci']['desc'] = "Compétences en informatique";
+$tab_notes['ci']['ponderation'] = 80;
 $tab_notes['ci']['modules'][106]['desc'] = "Mandats ...";
 $tab_notes['ci']['modules'][106]['note'] = 4;
 $tab_notes['ci']['modules'][106]['date'] = "2022-06-19";
@@ -27,7 +31,9 @@ $tab_notes['ci']['modules'][431]['desc'] = "Mandats ...";
 $tab_notes['ci']['modules'][431]['note'] = 4;
 $tab_notes['ci']['modules'][431]['date'] = "2022-06-26";
 
+
 $tab_notes['cie']['desc'] = "Cours interentreprises";
+$tab_notes['cie']['ponderation'] = 20;
 $tab_notes['cie']['modules'][123]['desc'] = "Serveur MS ...";
 $tab_notes['cie']['modules'][123]['note'] = 4;
 $tab_notes['cie']['modules'][123]['date'] = "2022-01-19";
@@ -38,8 +44,9 @@ $tab_notes['cie']['modules'][216]['desc'] = "Ioe";
 $tab_notes['cie']['modules'][216]['note'] = 4.5;
 $tab_notes['cie']['modules'][216]['date'] = "2022-01-21";
 $tab_notes['cie']['modules'][293]['desc'] = "Créer site ...";
-$tab_notes['cie']['modules'][187]['note'] = 4.5;
-$tab_notes['cie']['modules'][187]['date'] = "2022-01-22";
+$tab_notes['cie']['modules'][293]['note'] = 4.5;
+$tab_notes['cie']['modules'][293]['date'] = "2022-01-22";
 
+$tab_notes['cie']['citation'] = "Moyenne finale : ";
 
 ?>
