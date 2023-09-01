@@ -47,5 +47,4 @@ $tab_notes['cie']['modules'][293]['desc'] = "Créer site ...";
 $tab_notes['cie']['modules'][293]['note'] = 4.5;
 $tab_notes['cie']['modules'][293]['date'] = "2022-01-22";
 
-
 ?>
