@@ -7,9 +7,10 @@
     th , td , table{text-align : left;
         border: solid 1px black;}
     th , td {width: 30px;}
-    th { background-color: darkorchid;
-
+    th {
+        background-color: cornflowerblue;
     }
+
     .tresBon{
         background-color: lightgreen;
     }
@@ -19,6 +20,12 @@
     .pasBon{
         background-color: red;
     }
+
+    .erreur{
+        background-color: red;
+    }
+
+
 
 </style>
 </head>
@@ -30,6 +37,8 @@ include("notes.inc.php");
 echo "<pre>";
 //print_r($tab_notes);
 
+echo "Notes de mon apprentisage";
+echo "<br>";
 
 foreach ($tab_notes AS $nom_domaine => $domaine){
 
@@ -46,15 +55,16 @@ foreach ($tab_notes AS $nom_domaine => $domaine){
         echo "<td>$key</td>";
         echo "<td>".$module['desc']."</td>";
         echo "<td>".$module['date']."</td>";
-        if($module['note'] > 4.5){
+        if($module['note'] > 6){
+            echo "<td class='erreur'>invalide</td>";
+        }
+        else if($module['note'] > 4.5){
             echo "<td class='tresBon'>".round($module['note'],1)."</td>";
         }elseif($module['note'] <= 4.5 && $module['note'] >= 3.5){
             echo "<td class='bon'>".round($module['note'],1)."</td>";
         }else{
             echo "<td class='pasBon'>".round($module['note'],1)."</td>";
         }
-
-
         $nb_notes ++;
         $somme_notes += $module['note'];
 
@@ -67,8 +77,13 @@ foreach ($tab_notes AS $nom_domaine => $domaine){
     }
     $moyenne = $domaine['moyenne'] = $somme_notes/$nb_notes;
     echo "<tr>";
+
     echo "<td colspan='3'>Moyenne</td>";
-    if($moyenne > 4.5){
+    echo"<br>";
+    if($module['note'] > 6){
+        echo "<td class='erreur'>invalide</td>";
+    }
+    else if ($moyenne > 4.5){
         echo "<td class='tresBon'>".round($moyenne,1)."</td>";
     }elseif ($moyenne <= 4.5 && $moyenne >= 3.5){
         echo "<td class='bon'>".round($moyenne,1)."</td>";
@@ -87,6 +102,7 @@ echo "</table>";
 
 echo "<table border='2'>";
 
+echo "<tr><th colspan='4'>Moyennes</th></tr>";
 
 foreach ($tab_notes AS $domaine){
     echo "<tr>";
@@ -94,9 +110,12 @@ foreach ($tab_notes AS $domaine){
     echo "<td>".$domaine['desc']."</td>";
     echo "<td>".$domaine['ponderation']."%</td>";
     if($domaine['moyenne'] > 4.5){
+
         echo "<td class='tresBon'>".round($domaine['moyenne'],1)."</td>";
-    }elseif($domaine['moyenne'] <= 4.5 && $domaine['moyenne'] >= 3.5){
+
+    }elseif($domaine['moyenne'] <= 4.5 && $domaine['moyenne'] >= 3.5) {
         echo "<td class='bon'>".round($domaine['moyenne'],1)."</td>";
+
     }else{
         echo "<td class='pasBon'>".round($domaine['moyenne'],1)."</td>";
     }
@@ -119,6 +138,7 @@ $tab_notes['moyenne'] = round($resultat / 100,1 );
 echo"<tr>";
     echo"<td>"."Moyenne Générale"."</td>";
     echo"<td>"."</td>";
+
     if($tab_notes['moyenne'] > 4.5){
         echo"<td class='tresBon'>".round($tab_notes['moyenne'],1)."</td>";
     }elseif($tab_notes['moyenne'] <= 4.5 && $tab_notes['moyenne'] >= 3.5){
@@ -127,11 +147,23 @@ echo"<tr>";
         echo"<td class='pasBon'>".round($tab_notes['moyenne'],1)."</td>";
     }
 
+    //if($tab_notes['moyenne'] > 3.5){
+    //echo"<img src=dinosaur.gif>";
+    //}
+    //if($tab_notes['moyenne'] <= 3.5){
+    //echo"<img src=triste.gif>";
+    //}
+
+
     echo"</tr>";
 
 
 
 
+    //Quentin
+
+//background-image: url("Quentin.jpg");
+        //background-position: 800px 440px;
 //explode("", $moyenne);
 
 //$moyennee = array(5.7, 4.6);
@@ -143,6 +175,7 @@ echo "</table>";
 // echo "({$tab_notes['cie']['modules'][123]['note']} + {$tab_notes['cie']['modules'][187]['note']}) / 2";
 echo "</pre>";
 ?>
+
     </body>
 </html>
 
