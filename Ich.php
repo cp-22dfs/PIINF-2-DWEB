@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -14,9 +18,11 @@
     .tresBon{
         background-color: lightgreen;
     }
+
     .bon{
         background-color: greenyellow;
     }
+
     .pasBon{
         background-color: red;
     }
