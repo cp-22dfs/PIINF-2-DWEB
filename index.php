@@ -8,7 +8,7 @@
 <body>
 <h2>Rappel sur les formulaires</h2>
 
-<form action="result.php" method="post">
+<form action="Révision formulaire/result.php" method="post">
 
     <select name="formation">
         <option value="ict">Informaticien Web</option>
@@ -33,7 +33,7 @@
 <br>
 
 
-<form action="result.php" method="get">
+<form action="Révision formulaire/result.php" method="get">
     <select name="formation">
         <option value="ict">Informaticien Web</option>
         <option value="oic">Operateur informatique</option>

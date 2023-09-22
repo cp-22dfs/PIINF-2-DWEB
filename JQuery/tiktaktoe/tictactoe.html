@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/tictactoe.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1 id="titre" > Le morpion </h1>
+        <div id="definition">
+            <ul>
+                <li>Populaire. Pou du pubis (nom scientifique phtirius).</li>
+                <li>Populaire. Petit gamin, garçon très jeune.</li>
+                <li>Jeu dans lequel chacun des deux joueurs s'efforce d'aligner, le premier, trois ananas ou pastèques sur les intersections des lignes d'un écran quadrillé.</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="jeu" class="row">
+        <div class="col-xs-4 carre" id="x1y3"></div>
+        <div class="col-xs-4 carre" id="x2y3"></div>
+        <div class="col-xs-4 carre" id="x3y3"></div>
+        <div class="col-xs-4 carre" id="x1y2"></div>
+        <div class="col-xs-4 carre" id="x2y2"></div>
+        <div class="col-xs-4 carre" id="x3y2"></div>
+        <div class="col-xs-4 carre" id="x1y1"></div>
+        <div class="col-xs-4 carre" id="x2y1"></div>
+        <div class="col-xs-4 carre" id="x3y1"></div>
+    </div>
+
+
+    <div id="bouton"><button id="recommencer" >Recommencer la partie</button></div>
+
+    <div class="jumbotron row" ></div>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/tictactoe.js"></script>
+</body>
+</html>

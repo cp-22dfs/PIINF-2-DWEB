@@ -34,15 +34,15 @@
 <td>
 
     <tr><img src="catdanse.png" alt="Chat qui danse"></tr>
-    <tr><img src="quentin.jpg" alt="Quentin"></tr>
+    <tr><img src="JQuery/tiktaktoe/css/quentin.jpg" alt="Quentin"></tr>
     <tr><img src="catdanse.png" alt="Chat qui danse"></tr>
-    <tr><img src="quentin.jpg" alt="Quentin"></tr>
+    <tr><img src="JQuery/tiktaktoe/css/quentin.jpg" alt="Quentin"></tr>
     <tr><img src="catdanse.png" alt="Chat qui danse"></tr>
-    <tr><img src="quentin.jpg" alt="Quentin"></tr>
+    <tr><img src="JQuery/tiktaktoe/css/quentin.jpg" alt="Quentin"></tr>
     <tr><img src="catdanse.png" alt="Chat qui danse"></tr>
-    <tr><img src="quentin.jpg" alt="Quentin"></tr>
+    <tr><img src="JQuery/tiktaktoe/css/quentin.jpg" alt="Quentin"></tr>
     <tr><img src="catdanse.png" alt="Chat qui danse"></tr>
-    <tr><img src="quentin.jpg" alt="Quentin"></tr>
+    <tr><img src="JQuery/tiktaktoe/css/quentin.jpg" alt="Quentin"></tr>
     <tr><img src="dinosaur.gif" alt="dinosaure"></tr>
 
 </td>
